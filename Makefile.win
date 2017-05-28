@@ -1,7 +1,7 @@
 # Project: othello
 # Compiler: Default GCC compiler
 # Compiler Type: MingW 3
-# Makefile created by wxDev-C++ IDE 7.4.2.569 on 28/05/17 12:26
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 28/05/17 12:44
 
 WXLIBNAME = wxmsw29u
 CPP       = g++.exe
@@ -43,4 +43,4 @@ Objects/MingW/othelloFrm.o: $(GLOBALDEPS) othelloFrm.cpp othelloFrm.h
 	$(CPP) -c othelloFrm.cpp -o Objects/MingW/othelloFrm.o $(CXXFLAGS)
 
 Objects/MingW/othello_private.res: Objects/MingW/othello_private.rc othelloApp.rc 
-	$(WINDRES) --input-format=rc -o Objects/MingW/othello_private.res $(RCINCS) Objects/MingW/OTHELL~1.RC -O coff
+	$(WINDRES) --input-format=rc -o Objects/MingW/othello_private.res $(RCINCS) Objects/MingW/othello_private.rc -O coff

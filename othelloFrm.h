@@ -56,10 +56,23 @@ class othelloFrm : public wxFrame
             if(Bpresionado->GetBackgroundColour()=="WHITE" && B1->GetBackgroundColour()=="BLACK" && B2->GetBackgroundColour()=="WHITE" && turno==1){
                 B1->SetBackgroundColour("WHITE");
                 
-            }
+            }//FUNCION PARA HACER CAMBIOS DE A 1 FICHA
             
         }
 		
+		void Cambiar2(wxButton *Bpresionado,wxButton *B1,wxButton *B2,wxButton *B3,int turno){
+            
+            if(Bpresionado->GetBackgroundColour()=="BLACK" && B1->GetBackgroundColour()!="GREY" && B2->GetBackgroundColour()!="GREY" && B3->GetBackgroundColour()=="BLACK" && turno==0){
+                B1->SetBackgroundColour("BLACK");   
+                B2->SetBackgroundColour("BLACK");
+            }
+            
+            if(Bpresionado->GetBackgroundColour()=="WHITE" && B1->GetBackgroundColour()!="GREY" && B2->GetBackgroundColour()!="GREY" && B3->GetBackgroundColour()=="WHITE" && turno==1){
+                B1->SetBackgroundColour("WHITE");
+                B2->SetBackgroundColour("WHITE");
+            }
+            
+        }//FUNCION PARA HACER CAMBIOS DE A 2 FICHAS
 		
 		
 	private:
